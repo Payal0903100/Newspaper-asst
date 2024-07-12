@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #D0A2F7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billgenerator.billgeneratorViewcontroller">
+   <children>
+      <Label layoutX="201.0" layoutY="14.0" prefHeight="95.0" prefWidth="242.0" text="Bill Generator">
+         <font>
+            <Font name="Brush Script MT Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblmob" layoutX="201.0" layoutY="118.0" text="mobile no">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combomob" editable="true" layoutX="173.0" layoutY="158.0" prefWidth="150.0" />
+      <Label fx:id="lblpapers" layoutX="73.0" layoutY="184.0" text="papers">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtpapers" layoutX="47.0" layoutY="237.0" prefHeight="26.0" prefWidth="323.0" />
+      <Label fx:id="lblprices" layoutX="73.0" layoutY="264.0" text="Prices">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtprices" layoutX="49.0" layoutY="301.0" prefHeight="26.0" prefWidth="199.0" />
+      <Label layoutX="457.0" layoutY="264.0" text="Total Price">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="texttotal" layoutX="428.0" layoutY="301.0" prefHeight="26.0" prefWidth="178.0" />
+      <Label fx:id="lbllast" layoutX="55.0" layoutY="339.0" text="Last Billing Date">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblupto" layoutX="449.0" layoutY="332.0" text="Bill Up To">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datestart" layoutX="52.0" layoutY="369.0" />
+      <DatePicker fx:id="dateupto" layoutX="430.0" layoutY="369.0" />
+      <Label fx:id="lblmissdays" layoutX="243.0" layoutY="414.0" text="Missing Days(if any)">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmissdays" layoutX="266.0" layoutY="462.0" />
+      <Button layoutX="188.0" layoutY="508.0" mnemonicParsing="false" onAction="#dogenerateandsavebill" prefHeight="64.0" prefWidth="290.0" text="Generate and Save Bill">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblbill" layoutX="59.0" layoutY="609.0" text="Total Bill">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbill" layoutX="209.0" layoutY="609.0" />
+      <TextField fx:id="txtinfo" layoutX="506.0" layoutY="596.0" prefHeight="42.0" prefWidth="157.0" text="record info">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="11.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bbbb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="178.0" layoutX="528.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billlllllll.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="399.0" layoutY="132.0" mnemonicParsing="false" onAction="#dofetch" text="fetch">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
